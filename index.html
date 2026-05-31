@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivam Upadhyay – Full-Stack Developer & MERN Specialist. Portfolio showcasing projects, skills, and experience." />
+  <title>Shivam Upadhyay | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── HEADER / NAV ──────────────────────────────────────── -->
+  <header id="site-header" role="banner">
+    <nav class="container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Shivam Upadhyay Home">SU<span>.</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding:0.5rem 1.2rem">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#about"      onclick="closeMobileMenu()">About</a>
+    <a href="#skills"     onclick="closeMobileMenu()">Skills</a>
+    <a href="#projects"   onclick="closeMobileMenu()">Projects</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#contact"    onclick="closeMobileMenu()">Contact</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="hero-badge" aria-label="Currently open to opportunities">Available for Internships</div>
+            <h1 class="hero-name">
+              Shivam<br><span class="accent">Upadhyay</span>
+            </h1>
+            <p class="hero-role">
+              <strong>Full-Stack Developer</strong> &nbsp;·&nbsp; MERN Specialist &nbsp;·&nbsp; IIIT Manipur
+            </p>
+            <p class="hero-desc">
+              Building scalable SaaS applications and production-ready products with a focus on clean architecture, seamless UX, and Generative AI integration.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats" role="list" aria-label="Key stats">
+              <div class="stat" role="listitem">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">SaaS Projects</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat" role="listitem">
+                <span class="stat-num">150+</span>
+                <span class="stat-label">LeetCode Problems</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat" role="listitem">
+                <span class="stat-num">8.0</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="avatar-wrap">
+              <div class="avatar-bg"></div>
+              <div class="avatar-initials">SU</div>
+              <div class="avatar-chip chip-1">🚀 MERN Stack</div>
+              <div class="avatar-chip chip-2">🤖 AI Integration</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="section-label">About Me</p>
+            <h2 class="section-title" id="about-heading">Passionate about shipping products that matter</h2>
+            <p style="margin-top:1rem">I'm a B.Tech student at IIIT Manipur (2023–2027) specializing in MERN stack development and Data Structures & Algorithms. I love turning complex problems into clean, scalable solutions.</p>
+            <p>From building AI-powered SaaS platforms to implementing real-time token authentication systems, I focus on crafting code that is production-ready from day one. I also hold an Elite certificate from IIT Madras for Machine Learning — top 1% of 8,354 candidates.</p>
+            <div style="margin-top:1.5rem">
+              <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            </div>
+          </div>
+          <div class="about-cards reveal reveal-delay-2" aria-label="Core strengths">
+            <article class="about-card">
+              <div class="about-card-icon" aria-hidden="true">⚡</div>
+              <h3>Full-Stack MERN</h3>
+              <p>React, Node.js, Express & MongoDB — end-to-end product development</p>
+            </article>
+            <article class="about-card">
+              <div class="about-card-icon" aria-hidden="true">🤖</div>
+              <h3>Generative AI</h3>
+              <p>Claude & OpenAI API integration with prompt engineering expertise</p>
+            </article>
+            <article class="about-card">
+              <div class="about-card-icon" aria-hidden="true">🔐</div>
+              <h3>Auth Systems</h3>
+              <p>JWT, Firebase Auth, refresh token flows & secure REST APIs</p>
+            </article>
+            <article class="about-card">
+              <div class="about-card-icon" aria-hidden="true">💳</div>
+              <h3>SaaS & Payments</h3>
+              <p>Razorpay integration, credit-based monetization & SaaS architecture</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ────────────────────────────────────────────── -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="skills-intro reveal">
+          <p class="section-label">Technical Skills</p>
+          <h2 class="section-title" id="skills-heading">My Tech Stack</h2>
+          <p>Tools and technologies I use to build modern, scalable applications.</p>
+        </div>
+        <div class="skills-grid" role="list">
+
+          <article class="skill-category reveal reveal-delay-1" role="listitem">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">💻</div>
+              <span class="skill-cat-name">Languages</span>
+            </div>
+            <ul class="skill-tags" aria-label="Programming languages">
+              <li><span class="skill-tag">JavaScript</span></li>
+              <li><span class="skill-tag">Java</span></li>
+              <li><span class="skill-tag">Python</span></li>
+              <li><span class="skill-tag">C++</span></li>
+              <li><span class="skill-tag">C</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-2" role="listitem">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">⚛️</div>
+              <span class="skill-cat-name">Frameworks</span>
+            </div>
+            <ul class="skill-tags" aria-label="Frameworks and libraries">
+              <li><span class="skill-tag">React.js</span></li>
+              <li><span class="skill-tag">Node.js</span></li>
+              <li><span class="skill-tag">Express.js</span></li>
+              <li><span class="skill-tag">Redux</span></li>
+              <li><span class="skill-tag">Tailwind CSS</span></li>
+              <li><span class="skill-tag">Framer Motion</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-3" role="listitem">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">🗄️</div>
+              <span class="skill-cat-name">Databases</span>
+            </div>
+            <ul class="skill-tags" aria-label="Databases">
+              <li><span class="skill-tag">MongoDB</span></li>
+              <li><span class="skill-tag">Firebase Firestore</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-1" role="listitem">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">🤖</div>
+              <span class="skill-cat-name">AI & APIs</span>
+            </div>
+            <ul class="skill-tags" aria-label="AI and API tools">
+              <li><span class="skill-tag">Claude API</span></li>
+              <li><span class="skill-tag">OpenAI API</span></li>
+              <li><span class="skill-tag">Generative AI</span></li>
+              <li><span class="skill-tag">Prompt Engineering</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-2" role="listitem">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">🛠️</div>
+              <span class="skill-cat-name">Tools & DevOps</span>
+            </div>
+            <ul class="skill-tags" aria-label="Development tools">
+              <li><span class="skill-tag">Git & GitHub</span></li>
+              <li><span class="skill-tag">Postman</span></li>
+              <li><span class="skill-tag">VS Code</span></li>
+              <li><span class="skill-tag">Render</span></li>
+              <li><span class="skill-tag">Appwrite</span></li>
+              <li><span class="skill-tag">Razorpay</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal reveal-delay-3" role="listitem">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">🧠</div>
+              <span class="skill-cat-name">Core Concepts</span>
+            </div>
+            <ul class="skill-tags" aria-label="Core concepts">
+              <li><span class="skill-tag">DSA</span></li>
+              <li><span class="skill-tag">REST APIs</span></li>
+              <li><span class="skill-tag">System Design</span></li>
+              <li><span class="skill-tag">SaaS Architecture</span></li>
+              <li><span class="skill-tag">JWT / Firebase Auth</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────────────── -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="projects-intro reveal">
+          <p class="section-label">Featured Work</p>
+          <h2 class="section-title" id="projects-heading">Projects I've Built</h2>
+          <p>Production-ready full-stack applications shipped with real users in mind.</p>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card-top card-mocha" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <p class="project-type">AI SaaS Platform</p>
+              <h3 class="project-title">AceBot</h3>
+              <p class="project-desc">AI-powered interview prep SaaS where candidates upload their résumé, receive AI-generated role-specific questions, and practice live Technical & HR rounds. AI scores responses out of 10 with rich feedback dashboards and graphical breakdowns.</p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Node.js</span></li>
+                <li><span class="tech-tag">MongoDB</span></li>
+                <li><span class="tech-tag">Claude API</span></li>
+                <li><span class="tech-tag">Firebase</span></li>
+                <li><span class="tech-tag">Razorpay</span></li>
+              </ul>
+              <a href="https://github.com/ShivamBytes18/AceBot" class="project-link" aria-label="View AceBot on GitHub">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card-top card-blue" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <p class="project-type">Video Platform</p>
+              <h3 class="project-title">VidSphere</h3>
+              <p class="project-desc">MERN-based video streaming platform with uploads, streaming, likes, and subscriptions. Implements a robust JWT dual-token system with silent refresh and a promise-based queue to prevent race conditions on concurrent requests.</p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Node.js</span></li>
+                <li><span class="tech-tag">MongoDB</span></li>
+                <li><span class="tech-tag">Cloudinary</span></li>
+                <li><span class="tech-tag">JWT</span></li>
+              </ul>
+              <a href="https://github.com/ShivamBytes18/VidSphere" class="project-link" aria-label="View VidSphere on GitHub">View on GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-3">
+            <div class="project-card-top card-mix" aria-hidden="true"></div>
+            <div class="project-card-body">
+              <p class="project-type">Full-Stack App</p>
+              <h3 class="project-title">Blog Platform</h3>
+              <p class="project-desc">Full-featured blog application with authentication, protected routes, and complete CRUD operations. Built with React, Redux for state management, and Appwrite for backend services with optimized cloud storage and media handling.</p>
+              <ul class="project-tech" aria-label="Technologies used">
+                <li><span class="tech-tag">React</span></li>
+                <li><span class="tech-tag">Redux</span></li>
+                <li><span class="tech-tag">Appwrite</span></li>
+                <li><span class="tech-tag">Tailwind CSS</span></li>
+              </ul>
+              <a href="https://github.com/ShivamBytes18/Blogging" class="project-link" aria-label="View Blog Platform on GitHub">View on GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ─────────────────────────────────────────── -->
+    <section id="experience" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Background</p>
+          <h2 class="section-title" id="exp-heading">Experience & Achievements</h2>
+        </div>
+        <div class="exp-grid">
+
+          <div>
+            <h3 style="font-family:var(--font-head);font-size:0.85rem;font-weight:700;color:var(--ink-muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;" class="reveal">Education & Experience</h3>
+            <div class="timeline" aria-label="Education and experience timeline">
+              <div class="tl-item reveal reveal-delay-1">
+                <div class="tl-dot" aria-hidden="true"></div>
+                <div class="tl-card">
+                  <p class="tl-meta">2023 – 2027</p>
+                  <p class="tl-title">B.Tech — IIIT Manipur</p>
+                  <p class="tl-sub">CGPA: 8.0 &nbsp;·&nbsp; Computer Science</p>
+                </div>
+              </div>
+              <div class="tl-item reveal reveal-delay-2">
+                <div class="tl-dot" aria-hidden="true"></div>
+                <div class="tl-card">
+                  <p class="tl-meta">2024</p>
+                  <p class="tl-title">Ethical Hacking Intern</p>
+                  <p class="tl-sub">C-DAC Noida &nbsp;·&nbsp; Network security & vulnerability assessment</p>
+                </div>
+              </div>
+              <div class="tl-item reveal reveal-delay-3">
+                <div class="tl-dot" aria-hidden="true"></div>
+                <div class="tl-card">
+                  <p class="tl-meta">Class XII</p>
+                  <p class="tl-title">Senior Secondary</p>
+                  <p class="tl-sub">Score: 86%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="font-family:var(--font-head);font-size:0.85rem;font-weight:700;color:var(--ink-muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;" class="reveal">Certifications & Achievements</h3>
+            <div class="achievements-grid" aria-label="Certifications and achievements">
+              <article class="ach-card reveal reveal-delay-1">
+                <div class="ach-icon" aria-hidden="true">🏅</div>
+                <h4 class="ach-title">NPTEL Machine Learning — IIT Madras</h4>
+                <p class="ach-meta">Jan–Apr 2026 · Score 76% · 25/25 assignments</p>
+                <span class="ach-badge">Top 1% of 8,354</span>
+              </article>
+              <article class="ach-card reveal reveal-delay-2">
+                <div class="ach-icon" aria-hidden="true">🖥️</div>
+                <h4 class="ach-title">NPTEL COA — Elite</h4>
+                <p class="ach-meta">Computer Organization & Architecture</p>
+                <span class="ach-badge">Elite Certificate</span>
+              </article>
+              <article class="ach-card reveal reveal-delay-1">
+                <div class="ach-icon" aria-hidden="true">⚡</div>
+                <h4 class="ach-title">LeetCode 150+</h4>
+                <p class="ach-meta">Consistent DSA problem solving</p>
+                <span class="ach-badge">Active</span>
+              </article>
+              <article class="ach-card reveal reveal-delay-2">
+                <div class="ach-icon" aria-hidden="true">🚀</div>
+                <h4 class="ach-title">3 Production Apps</h4>
+                <p class="ach-meta">Deployed MERN applications</p>
+                <span class="ach-badge">Shipped</span>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────────── -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-inner">
+
+          <div class="contact-left reveal">
+            <p class="section-label">Get In Touch</p>
+            <h2 class="section-title" id="contact-heading">Let's Build Something Together</h2>
+            <p>Open to internships, freelance projects, and collaborative opportunities. If you have an idea or a role that fits, I'd love to hear from you.</p>
+            <address class="contact-items" style="font-style:normal">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <div class="contact-item-text">
+                  <span>Phone</span>
+                  <a href="tel:+919555181178">+91-9555181178</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">💼</div>
+                <div class="contact-item-text">
+                  <span>GitHub</span>
+                  <a href="https://github.com/ShivamBytes18" target="_blank" rel="noopener noreferrer">github.com/ShivamBytes18</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">🏫</div>
+                <div class="contact-item-text">
+                  <span>College</span>
+                  <p>IIIT Manipur, Batch 2027</p>
+                </div>
+              </div>
+            </address>
+          </div>
+
+          <div class="contact-form reveal reveal-delay-2" role="region" aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Jane Smith" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="jane@company.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell me about the opportunity or project..."></textarea>
+            </div>
+            <button type="button" class="form-submit" id="form-submit-btn" aria-label="Send message">Send Message</button>
+            <div class="form-success" id="form-success" role="alert" aria-live="polite">
+              ✅ Thanks! I'll get back to you soon.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Built with <span>♥</span> by Shivam Upadhyay · DecodeLabs Full Stack Development Project 1 · 2026</p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript (deferred so DOM is ready) -->
+  <script src="script.js" defer></script>
+</body>
+</html>
